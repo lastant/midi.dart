@@ -81,7 +81,7 @@ class CsegParser extends ObjectParser {
       }
     } else {
       switch (noteTranspositionTable & 0x0F) {
-        case 0: rules.noteTranspositionTable = NoteTranspositionTable.bass; break;
+        case 0: rules.noteTranspositionTable = NoteTranspositionTable.bypass; break;
         case 1: rules.noteTranspositionTable = NoteTranspositionTable.melody; break;
         case 2: rules.noteTranspositionTable = NoteTranspositionTable.chord; break;
         case 3: rules.noteTranspositionTable = version == 1 ? NoteTranspositionTable.bass : NoteTranspositionTable.melodicMinor; break;
